@@ -3,7 +3,7 @@ Projeto feito para conclusao do curso de Python data analytics
 
 ## Algumas Queries utilizadas
 
-#Verificação de valores nulos
+# Verificação de valores nulos
 
 SELECT * FROM employee WHERE Fname IS NULL OR Lname IS NULL OR Ssn IS NULL OR Dno IS NULL;
 SELECT * FROM departament WHERE Dname IS NULL OR Dnumber IS NULL OR Mgr_ssn IS NULL;
@@ -12,7 +12,7 @@ SELECT * FROM project WHERE Pname IS NULL OR Pnumber IS NULL OR Dnum IS NULL;
 SELECT * FROM works_on WHERE Essn IS NULL OR Pno IS NULL OR Hours IS NULL;
 SELECT * FROM dependent WHERE Essn IS NULL OR Dependent_name IS NULL;
 
-#Selecionar colaboradores que não possuem gerente, excluindo os gerentes
+# Selecionar colaboradores que não possuem gerente, excluindo os gerentes
 SELECT e.*
 FROM employee e
 LEFT JOIN departament d ON e.Ssn = d.Mgr_ssn
